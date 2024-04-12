@@ -16,7 +16,6 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import cpp from "./tech/cpp.png";
 import django from "./tech/django.png";
 import firebase from "./tech/firebase.png";
@@ -57,7 +56,6 @@ export {
   javascript,
   reactjs,
   tailwind,
-  typescript,
   cpp,
   django,
   firebase,
