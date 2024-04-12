@@ -14,7 +14,7 @@ const ConnectCard = ({ index, name, icon, source_code_link }) => {
       variants={fadeIn('down', 'spring', index * 0.5 * 0.75)}
     >
       <div
-        onClick={() => window.open({ source_code_link }, '_blank')}
+        onClick={() => window.open(source_code_link, '_blank')}
         className='cursor-pointer'
       >
         <Tilt
@@ -40,9 +40,9 @@ const Connect = () => {
     <div className='xl:mt-4 xl:flex-row flex gap-10 overflow-hidden justify-center'>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] bg-tertiary p-8 rounded-2xl'
       >
-        <div className='flex xs:flex-col sm:flex-row flex-col items-center gap-8'>
+        <div className='flex xs:flex-col sm:flex-row ml-2 flex-col items-center gap-8'>
           <div>
             {/* Connect - Title */}
             <p className={styles.sectionSubText}>Get in touch with me</p>
