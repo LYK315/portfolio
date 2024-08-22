@@ -47,7 +47,7 @@ const App = () => {
         {/* Scroll to Top Button */}
         <div className='fixed xs:bottom-2 bottom-10 w-full flex justify-center items-cente'>
           <div
-            className={`w-10 h-10 rounded-full border-[2px] border-secondary bg-tertiary justify-center transition ease-in-out duration-[750ms] cursor-pointer ${hover ? 'animate-bounce' : 'animate-none'} ${hover ? 'opacity-100' : opacity} ${window.scrollY >= 200 ? 'flex' : 'hidden'}`}
+            className={`w-10 h-10 rounded-full border-[2px] border-secondary bg-tertiary justify-center transition ease-in-out duration-[750ms] cursor-pointer ${hover ? 'animate-bounce' : 'animate-none'} ${hover ? 'opacity-100' : opacity} ${window.scrollY >= 200 ? 'block' : 'hidden'}`}
             onClick={() => window.scrollTo(0, 0)}
             onMouseEnter={(e) => trackHover(e)}
             onMouseLeave={(e) => trackHover(e)}
