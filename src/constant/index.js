@@ -210,7 +210,7 @@ const projects = [
       },
     ],
     image: nepts,
-    source_code_link: "https://github.com/LYK315/ICP-Project",
+    source_code_link: "https://github.com/LYK315/Top_Patient_Web_App",
   },
   {
     name: "Helth Care Center",
