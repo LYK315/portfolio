@@ -53,7 +53,12 @@ const Hero = () => {
 
       {/* Bouncing Ball */}
       <div className='absolute bottom-36 w-full h-full flex justify-center items-end'>
-        <div className="ball-box w-1/2 lg:h-1/3 md:h-1/4">
+        <div
+          className="
+        ball-box
+        xl:w-[65em] lg:w-[58em] md:w-[35em] sm:w-[25em] xs:w-[20em] w-[13em]
+        xl:h-[15em] lg:h-[10em] md:h-[12em] sm:h-[12em] xs:h-[13em] h-[20em]
+        ">
           <BouncingBall />
         </div>
       </div>
