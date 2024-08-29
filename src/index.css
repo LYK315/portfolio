@@ -14,10 +14,6 @@
   color-scheme: dark;
 }
 
-.ball-box{
-  border: 2px solid white;
-}
-
 .ball {
   font-family: "SUSE", sans-serif;
   position: absolute;
