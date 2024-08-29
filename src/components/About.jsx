@@ -43,7 +43,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a fresh graduate with experience in Full-Stack Web Development, and is familiar with frameworks like React and Django. I might not be an expert but I know where to find the answer and how to solve a problem. I also have knowledge in Android Applications and Genetic Algorithm (GA).
+        A recent graduate with solid experience in Full-Stack Web Development, and is familiar with frameworks like React and Django. I might not be an expert but I know where to find the answer and how to solve a problem. I also have basic knowledge in Android Applications and Genetic Algorithm (GA).
       </motion.p>
 
       {/* About - Cards  */}

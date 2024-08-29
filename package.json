@@ -21,6 +21,7 @@
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.11",
     "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.5",
     "react-router-dom": "^6.22.3",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",

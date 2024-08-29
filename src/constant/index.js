@@ -145,8 +145,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "Sep 2021 - Aug 2023",
     points: [
-      "Learnt the most important skills in my life, sales and negotiation.",
-      "There are always unexpected troubles coming up everyday in the property business, I've developed massive problem-solving skills in this industry.",
+      "Learnt the most important skills in my life, sales, negotiation and customer management.",
+      "Unexpected challenges arise daily in the property business, and I've developed strong problem-solving skills as a result.",
     ],
   },
   {
@@ -154,11 +154,10 @@ const experiences = [
     company_name: "Data Annotation",
     icon: dataannotation,
     iconBg: "#383E56",
-    date: "Feb 2024 - Current",
+    date: "Feb 2024 - Aug 2024",
     points: [
-      "Part Time",
       "Analyzes and Annotate responses from Large Language Models (LLM) in various topics (e.g. programming, algorithm, coding theory)",
-      "Applied this job to familiarize myself with more knowledges about different realms in the tech industry.",
+      "Familiarized myself the training process of LLMs, which has improved my ability to interact with other LLMs and enhance efficiency for my daily tasks.",
     ],
   },
 ];
@@ -194,7 +193,7 @@ const projects = [
   {
     name: "Non-Emergency Patient Transport Service",
     description:
-      "A platform that provides seamless Non-Emergency Patient Transport Service (NEPTS), allowing patient to manage their booking through few simple steps. As well as allowing staffs to view optimized routing schedule.",
+      "A platform that offers a seamless Non-Emergency Patient Transport Service (NEPTS), enabling patients to manage their bookings through a few simple steps. It also provides staff with access to optimized routing schedules.",
     tags: [
       {
         name: "django",
@@ -236,7 +235,7 @@ const projects = [
   {
     name: "My E-Doctor",
     description:
-      "Android Application that allow patients to manage appointments, get latest health information, attend online meeting with doctor, and more. Aiming to minimize contact between people during the pandemic.",
+      "Android Application that allows patients to manage appointments, get latest health information, attend online meeting with doctor, and more. Aiming to minimize contact between people during the pandemic time.",
     tags: [
       {
         name: "android-studio",
@@ -265,7 +264,7 @@ const connect = [
   {
     name: "github",
     icon: github,
-    source_code_link: "https://github.com/LYK315",
+    source_code_link: "https://github.com/LYK315?tab=repositories",
   }
 ]
 
