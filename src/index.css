@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
@@ -30,7 +30,6 @@
   line-height: 1.2;
   background: linear-gradient(135deg, #440571, #946eb5);
   box-shadow: 0 0 20px rgba(216, 191, 216, 0.4)
-    /* lighter outer glow */
 }
 
 .hash-span {

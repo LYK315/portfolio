@@ -26,8 +26,8 @@ const BouncingBall = ({ setOpen, count, setCount }) => {
     let ballSpeedY = 1;
 
     // Initialize position variables
-    let posX = 0;
-    let posY = 0;
+    let posX = 13;
+    let posY = 13;
 
     // Declare Box Dimension
     const ballWidth = ball.offsetWidth;

@@ -20,6 +20,14 @@ import {
   postgre,
   python,
   cpp,
+  jira,
+  virtualbox,
+  uipath,
+  bootstrap,
+  androidstudio,
+  jupyter,
+  mysql,
+  threejs,
 
   vivahomes,
   dataannotation,
@@ -68,6 +76,18 @@ const services = [
 
 const skills = [
   {
+    name: "React",
+    icon: reactjs,
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -80,12 +100,12 @@ const skills = [
     icon: javascript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "Django",
-    icon: django,
+    name: "C++",
+    icon: cpp,
   },
   {
     name: "Tailwind CSS",
@@ -96,40 +116,60 @@ const skills = [
     icon: mui,
   },
   {
-    name: "Firebase",
-    icon: firebase,
+    name: "Bootstrap",
+    icon: bootstrap,
   },
   {
     name: "Postgre SQL",
     icon: postgre,
   },
   {
-    name: "Google OR-Tools",
-    icon: google_or,
+    name: "MySQL",
+    icon: mysql,
   },
   {
-    name: "Google Cloud",
-    icon: google_cloud,
+    name: "Firebase",
+    icon: firebase,
   },
   {
     name: "git",
     icon: git,
   },
   {
+    name: "Jira",
+    icon: jira,
+  },
+  {
+    name: "Three.js",
+    icon: threejs,
+  },
+  {
+    name: "Google Cloud",
+    icon: google_cloud,
+  },
+  {
+    name: "Google OR-Tools",
+    icon: google_or,
+  },
+  {
     name: "figma",
     icon: figma,
   },
   {
-    name: "Python",
-    icon: python,
+    name: "VirtualBox",
+    icon: virtualbox,
   },
   {
-    name: "Java",
-    icon: java,
+    name: "UiPath",
+    icon: uipath,
   },
   {
-    name: "C++",
-    icon: cpp,
+    name: "Android Studio",
+    icon: androidstudio,
+  },
+  {
+    name: "Jupyter",
+    icon: jupyter,
   },
 ];
 
@@ -147,6 +187,7 @@ const experiences = [
     points: [
       "Learnt the most important skills in my life, sales, negotiation and customer management.",
       "Unexpected challenges arise daily in the property business, and I've developed strong problem-solving skills as a result.",
+      "Allows me to approach challenges with unique perspectives."
     ],
   },
   {
@@ -273,19 +314,19 @@ const questions = [
     question: "I like to work 24/7 💻",
     ans: false,
     correct: "Mhm.. Kai needs rest. But he only rests when the job is done.",
-    wrong: "Kai is not a machine.. But he only rests when the job is done."
+    wrong: "Kai is not a machine.. But he only rests when the job is done.",
   },
   {
     question: "Stress and Challenge will only fuel my adrenaline and push me to new heights🔥🔥",
     ans: true,
-    correct: "Mhm, indeed, Kai has a strong appetite for challenges.",
-    wrong: "Kai is not built different, but he thrives on challenges.",
+    correct: "Mhm.. Indeed, Kai has a strong appetite for challenges.",
+    wrong: "Kai is not built different, but he thrives on challenges!",
   },
   {
     question: "I can do anything 💪",
     ans: false,
-    correct: "True, Kai is not a genius, but he will learn anything necessary to get the job done.",
-    wrong: "Sorry, Kai can't do anything, but he will learn anything necessary to get the job done.",
+    correct: "True, Kai is not a genius.. but he will learn anything necessary to get the job done.",
+    wrong: "Sorry, Kai can't do anything.. but he will learn anything necessary to get the job done.",
   }
 ]
 

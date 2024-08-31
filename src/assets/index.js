@@ -25,6 +25,14 @@ import java from "./tech/java.png";
 import mui from "./tech/mui.png";
 import postgre from "./tech/postgre.png";
 import python from "./tech/python.png";
+import jira from "./tech/jira.png";
+import virtualbox from "./tech/virtualbox.png"
+import uipath from "./tech/uipath.png"
+import bootstrap from "./tech/bootstrap.png"
+import androidstudio from "./tech/androidstudio.png"
+import jupyter from "./tech/jupyter.png"
+import mysql from "./tech/mysql.png"
+import threejs from "./tech/threejs.png"
 
 import vivahomes from "./company/vivahomes.png";
 import dataannotation from "./company/dataannotation.png";
@@ -44,7 +52,7 @@ export {
   web,
   android,
   ga,
-    
+
   github,
   linkedin,
 
@@ -65,6 +73,14 @@ export {
   mui,
   postgre,
   python,
+  jira,
+  virtualbox,
+  uipath,
+  bootstrap,
+  androidstudio,
+  jupyter,
+  mysql,
+  threejs,
 
   vivahomes,
   dataannotation,

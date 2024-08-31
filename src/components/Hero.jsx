@@ -43,7 +43,7 @@ const Hero = () => {
 
           {/* Sub Title */}
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm passionate in developing & learning<br className='sm:block hidden' />Full-Stack Web Applications.
+            I'm passionate about developing & learning<br className='sm:block hidden' />Full-Stack Applications.
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { questions } from '../../constant';
 
 const Answer = ({ question, answered, ans }) => {
   return (
-    <div className='text-center w-fit max-w-lg text-gray-800'>
+    <div className='text-center text-gray-800'>
       <div className='mx-auto my-auto'>
         {/* Question */}
         <div className={`${answered ? "hidden" : "visible"}`}>
@@ -18,13 +18,13 @@ const Answer = ({ question, answered, ans }) => {
         <div className={`${answered ? "visible" : "hidden"}`}>
           {/* Correct */}
           <div className={`${ans ? "visible" : "hidden"}`}>
-            <h3 className='text-lg font-black'>Correct ✅</h3>
+            <h3 className='text-xl font-black'>Correct ✅</h3>
             <p className='text-lg font-mono font-semibold my-6'>{question.correct}</p>
           </div>
 
           {/* Wrong */}
           <div className={`${ans ? "hidden" : "visible"}`}>
-            <h3 className='text-lg font-black'>Wrong ❌</h3>
+            <h3 className='text-xl font-black'>Wrong ❌</h3>
             <p className='text-lg font-mono font-semibold my-6'>{question.wrong}</p>
           </div>
         </div>
@@ -87,7 +87,7 @@ const Modal = ({ open, count, onClose, children }) => {
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         animate={open ? "visible" : "hidden"}
-        className='rounded-xl'
+        className='rounded-xl lg:max-w-xl md:max-w-lg sm:max-w-md xs:max-w-sm max-w-xs'
         style={{
           background: background,
         }}
