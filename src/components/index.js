@@ -10,7 +10,6 @@ import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Skills from "./Skills";
 import Connect from "./Connect";
-import BouncingBall from './BouncingBall';
 
 export {
   Hero,
@@ -28,5 +27,4 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  BouncingBall
 };

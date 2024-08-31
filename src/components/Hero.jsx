@@ -1,13 +1,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { useState, useEffect, useRef } from 'react'
-import BouncingBall from './BouncingBall'
+import { useState } from 'react'
+import BouncingBall from './elements/BouncingBall'
+import Modal from './elements/Modal'
 import { ComputersCanvas } from './canvas'
-import Marquee from 'react-fast-marquee'
 
 const Hero = () => {
   const [opacity, setOpacity] = useState('opacity-100')
+  const [open, setOpen] = useState(false)
+  const [count, setCount] = useState(-1)
 
   const changeOpacity = () => {
     if (window.scrollY >= 110) {
@@ -17,6 +19,7 @@ const Hero = () => {
     }
   }
 
+  // Track windows scroll
   window.addEventListener('scroll', changeOpacity)
 
   return (
@@ -45,24 +48,21 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* <Marquee className="absolute bottom-48 place-self-center" speed={50} pauseOnHover>
-        <div className='text-white font-serif md:text-[20px] sm:text-[30px] xs:text-[20px] text-[20px] '>
-          Challenges will only fuel my adrenaline and push me to new heights.     
-        </div>
-      </Marquee> */}
-
       {/* Bouncing Ball */}
+      {/* xl:w-[65em] lg:w-[58em] md:w-[35em] sm:w-[25em] xs:w-[20em] w-[13em] */}
       <div className='absolute bottom-36 w-full h-full flex justify-center items-end'>
-        <div
-          className="
+        <div className="
         ball-box
-        xl:w-[65em] lg:w-[58em] md:w-[35em] sm:w-[25em] xs:w-[20em] w-[13em]
-        xl:h-[15em] lg:h-[10em] md:h-[12em] sm:h-[12em] xs:h-[13em] h-[20em]
-        ">
-          <BouncingBall />
+        flex-[0.70]
+        2xl:h-[16em] xl:h-[10em] lg:h-[10em] md:h-[12em] sm:h-[12em] xs:h-[13em] h-[20em]
+        "
+        >
+          <BouncingBall setOpen={setOpen} count={count} setCount={setCount} />
         </div>
       </div>
 
+      {/* Pop Up */}
+      <Modal open={open} count={count} onClose={() => setOpen(false)} />
 
       {/* <ComputersCanvas /> */}
       {/* <div className={`${styles.paddingX} absolute inset-0 top-[370px] max-w-3xl mx-auto`}

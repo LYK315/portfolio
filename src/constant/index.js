@@ -268,4 +268,25 @@ const connect = [
   }
 ]
 
-export { services, skills, experiences, testimonials, projects, connect };
+const questions = [
+  {
+    question: "I like to work 24/7 💻",
+    ans: false,
+    correct: "Mhm.. Kai needs rest. But he only rests when the job is done.",
+    wrong: "Kai is not a machine.. But he only rests when the job is done."
+  },
+  {
+    question: "Stress and Challenge will only fuel my adrenaline and push me to new heights🔥🔥",
+    ans: true,
+    correct: "Mhm, indeed, Kai has a strong appetite for challenges.",
+    wrong: "Kai is not built different, but he thrives on challenges.",
+  },
+  {
+    question: "I can do anything 💪",
+    ans: false,
+    correct: "True, Kai is not a genius, but he will learn anything necessary to get the job done.",
+    wrong: "Sorry, Kai can't do anything, but he will learn anything necessary to get the job done.",
+  }
+]
+
+export { services, skills, experiences, testimonials, projects, connect, questions };

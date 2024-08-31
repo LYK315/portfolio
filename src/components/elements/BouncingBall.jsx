@@ -2,11 +2,15 @@ import React from 'react'
 import { useEffect, useRef } from 'react'
 
 // Bouncing Ball Component
-const BouncingBall = () => {
-  // Handle Ball Clicked
-  const handleClick = () => {
-    alert('Challenges will only fuel my adrenaline and push me to new heights.');
-  };
+const BouncingBall = ({ setOpen, count, setCount }) => {
+  // Increment Count, if count == 3 set to 0
+  const incrementCount = () => {
+    document.body.style.overflow = 'hidden';
+    setCount(prevCount => {
+      const newCount = prevCount + 1;
+      return newCount === 3 ? 0 : newCount;
+    })
+  }
 
   // Create mutable reference to the ball element using useRef
   const ballRef = useRef(null);
@@ -18,8 +22,8 @@ const BouncingBall = () => {
     const box = ball.parentElement;
 
     // Set initial speeds for horizontal & vertical movement
-    let ballSpeedX = 1.5;
-    let ballSpeedY = 1.5;
+    let ballSpeedX = 1;
+    let ballSpeedY = 1;
 
     // Initialize position variables
     let posX = 0;
@@ -61,7 +65,7 @@ const BouncingBall = () => {
   }, []);
 
   return (
-    <div ref={ballRef} className='ball text-purple-100 text-center' onClick={handleClick}>
+    <div ref={ballRef} className='ball text-purple-100 text-center' onClick={() => { setOpen(true); incrementCount() }}>
       CLICK ME
     </div>
   );
