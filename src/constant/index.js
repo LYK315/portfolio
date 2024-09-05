@@ -305,7 +305,7 @@ const connect = [
   {
     name: "github",
     icon: github,
-    source_code_link: "https://github.com/LYK315?tab=repositories",
+    source_code_link: "https://github.com/LYK315",
   }
 ]
 
