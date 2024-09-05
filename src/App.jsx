@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Skills, Works, StarsCanvas, Connect } from './components';
+import { About, Contact, Journey, Feedbacks, Hero, Navbar, Skills, Works, StarsCanvas, Connect } from './components';
 import { useState } from 'react';
 import { arrowUp } from './assets';
 
@@ -32,7 +32,7 @@ const App = () => {
           <Hero />
         </div>
         <About />
-        <Experience />
+        <Journey />
         <Skills />
         <Works />
         {/* <Feedbacks /> */}

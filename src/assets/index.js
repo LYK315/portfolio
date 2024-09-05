@@ -36,6 +36,7 @@ import threejs from "./tech/threejs.png"
 
 import vivahomes from "./company/vivahomes.png";
 import dataannotation from "./company/dataannotation.png";
+import newtz from "./company/newtz.png";
 
 import myedoctor from "./myedoctor.png";
 import healthcare from "./healthcare.png";
@@ -84,6 +85,7 @@ export {
 
   vivahomes,
   dataannotation,
+  newtz,
 
   myedoctor,
   healthcare,

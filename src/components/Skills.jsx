@@ -45,7 +45,7 @@ const Skills = () => {
       {/* Skills - Title */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My abilities</p>
-        <h2 className={styles.sectionHeadText}>Skills</h2>
+        <h2 className={styles.sectionHeadText}>Tech. Skills</h2>
       </motion.div>
 
       {/* Display All Skiils */}

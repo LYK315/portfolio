@@ -31,6 +31,7 @@ import {
 
   vivahomes,
   dataannotation,
+  newtz,
 
   github,
   linkedin,
@@ -46,8 +47,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "journey",
+    title: "Journey",
   },
   {
     id: "connect",
@@ -177,7 +178,7 @@ const skills = [
 // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
 // "Implementing responsive design and ensuring cross-browser compatibility.",
 // "Participating in code reviews and providing constructive feedback to other developers.",
-const experiences = [
+const journeys = [
   {
     title: "Real Estate Negotiator",
     company_name: "Vivahomes Realty",
@@ -188,6 +189,17 @@ const experiences = [
       "Learnt the most important skills in my life, sales, negotiation and customer management.",
       "Unexpected challenges arise daily in the property business, and I've developed strong problem-solving skills as a result.",
       "Allows me to approach challenges with unique perspectives."
+    ],
+  },
+  {
+    title: "Co-Founder, Shirt Printing Business",
+    company_name: "Newtz",
+    icon: newtz,
+    iconBg: "#383E56",
+    date: "Nov 2022 - Present",
+    points: [
+      "Co-founded a shirt printing business, initially handling operations, sales, and marketing.",
+      "Transitioned to a more strategic role as the business grew, allowing a focus on IT career while the business continued to thrive under the leadership of other partners."
     ],
   },
   {
@@ -330,4 +342,4 @@ const questions = [
   }
 ]
 
-export { services, skills, experiences, testimonials, projects, connect, questions };
+export { services, skills, journeys, testimonials, projects, connect, questions };
