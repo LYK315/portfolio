@@ -4,7 +4,6 @@ import { styles } from '../styles'
 import { useState } from 'react'
 import BouncingBall from './elements/BouncingBall'
 import Modal from './elements/Modal'
-import { ComputersCanvas } from './canvas'
 
 const Hero = () => {
   const [opacity, setOpacity] = useState('opacity-100')

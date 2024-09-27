@@ -1,7 +1,13 @@
 import { BrowserRouter } from 'react-router-dom';
 import { About, Contact, Journey, Feedbacks, Hero, Navbar, Skills, Works, StarsCanvas, Connect } from './components';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { arrowUp } from './assets';
+import { motion, useMotionTemplate, useMotionValue, animate } from "framer-motion";
+import { StaticStarsCanvas } from './components/canvas'
+
+
+const COLORS = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
+
 
 const App = () => {
   const [opacity, setOpacity] = useState('opacity-0')
@@ -24,14 +30,45 @@ const App = () => {
 
   window.addEventListener('scroll', changeOpacity)
 
+  // Aurora Background
+  const color = useMotionValue(COLORS[0]);
+  const backgroundImage = useMotionTemplate`radial-gradient(180% 150% at 13% 0%, #050816 50%, ${color})`
+  useEffect(() => {
+    animate(color, COLORS, {
+      ease: 'easeInOut',
+      duration: 10,
+      repeat: Infinity,
+      repeatType: 'mirror'
+    })
+  }, [])
+
+  const backgroundImg = useMotionTemplate`radial-gradient(180% 150% at 13% 100%, #050816 50%, ${color})`
+  useEffect(() => {
+    animate(color, COLORS, {
+      ease: 'easeInOut',
+      duration: 10,
+      repeat: Infinity,
+      repeatType: 'mirror'
+    })
+  }, [])
+
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+        <motion.div
+          style={{ backgroundImage }}
+          className='bg-hero-pattern bg-cover bg-no-repeat bg-center'
+        >
+          <StaticStarsCanvas />
           <Navbar />
           <Hero />
-        </div>
-        <About />
+        </motion.div>
+
+        <motion.div
+          style={{ backgroundImage: backgroundImg }}
+        >
+          <About />
+        </motion.div>
         <Journey />
         <Skills />
         <Works />
