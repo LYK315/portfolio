@@ -32,7 +32,7 @@ const App = () => {
 
   // Aurora Background
   const color = useMotionValue(COLORS[0]);
-  const backgroundImage = useMotionTemplate`radial-gradient(180% 150% at 13% 0%, #050816 50%, ${color})`
+  const backgroundImage = useMotionTemplate`radial-gradient(300% 230% at 10% 10%, #050816 20%, ${color})`
   useEffect(() => {
     animate(color, COLORS, {
       ease: 'easeInOut',
@@ -42,7 +42,7 @@ const App = () => {
     })
   }, [])
 
-  const backgroundImg = useMotionTemplate`radial-gradient(180% 150% at 13% 100%, #050816 50%, ${color})`
+  const backgroundImg = useMotionTemplate`radial-gradient(300% 230% at 10% 90%, #050816 20%, ${color})`
   useEffect(() => {
     animate(color, COLORS, {
       ease: 'easeInOut',
