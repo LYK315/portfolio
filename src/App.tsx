@@ -5,7 +5,7 @@ import About from './components/About/About';
 import Journey from './components/Journey/Journey';
 import Skills from './components/Skills/Skills';
 import Projects from './components/PrevProject/Projects';
-import Connect from './components/connect/Connect';
+import Connect from './components/Connect/Connect';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
