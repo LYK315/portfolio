@@ -8,7 +8,7 @@ import { JOURNEY } from "../../constants"
 
 function Journey() {
   return (
-    <div className="pt-16 px-[9%]">
+    <div className="pt-[8rem] px-[9%]">
 
       {/* Working journey - Title */}
       <motion.div variants={textMotionVariant()}>
@@ -17,7 +17,7 @@ function Journey() {
       </motion.div>
 
       {/* Working Experiene - Details */}
-      <div className="pt-12 xs:w-[89%] lg:w-full mx-auto">
+      <div className="2xs:w-[89%] lg:w-full mx-auto 2xs:pt-9 md:pt-12">
         <VerticalTimeline
           layout="2-columns"
         >

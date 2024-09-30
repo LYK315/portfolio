@@ -33,14 +33,14 @@ export default function Hero() {
     >
 
       {/* Title */}
-      <div className="px-[9%] pt-28 flex flex-row gap-10">
+      <div className="px-[9%] pt-28 flex flex-row md:gap-10 2xs:gap-7">
         {/* Vertical Slider */}
         <div className='flex flex-col justify-center items-center'>
           {/* Slider Circle */}
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
 
           {/* Slider Bar */}
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+          <div className='w-1 h-[18rem] violet-gradient' />
         </div>
 
         {/* Title */}

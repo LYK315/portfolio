@@ -19,7 +19,7 @@ export default function Navbar() {
   window.addEventListener('scroll', changeshadow)
 
   return (
-    <div className={`fixed w-full flex justify-between items-center top-0 py-[15px] px-6 pl-10 z-50 bg-primary shadow-indigo-800/30 ${shadow ? 'shadow-2xl' : 'shadow-none'}`}>
+    <div className={`fixed w-full flex justify-between items-center top-0 py-[15px] px-6 2xs:pl-4 xs:pl-10 z-50 bg-primary shadow-indigo-800/30 ${shadow ? 'shadow-2xl' : 'shadow-none'}`}>
 
         {/* Title Name */}
         <Link

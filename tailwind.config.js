@@ -13,7 +13,8 @@ export default {
         hover: "#a5f3fc "
       },
       screens: {
-        'xs': '420px',
+        '2xs': '300px',
+        'xs': '450px',
         'sm': '640px',
         'md': '768px',
         'lg': '1024px',

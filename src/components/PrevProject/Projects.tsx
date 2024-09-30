@@ -9,7 +9,7 @@ import SectionWrapper from '../../hoc/SectionWrapper'
 
 function Projects() {
   return (
-    <div className="pt-20 px-[9%]">
+    <div className="pt-[7rem] px-[9%]">
 
       {/* Previous Works - Title */}
       <motion.div
@@ -22,7 +22,7 @@ function Projects() {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn({ direction: "", type: "", delay: 0.1, duration: 1 })}
-          className='mt-3 text-secondary text-[17px] max-w-[90%] lg:max-w-[80%] leading-[30px] text-justify'
+          className='mt-3 text-secondary text-[17px] max-w-[90%] lg:max-w-[80%] leading-[30px] text-justify  sm:mx-0 2xs:mx-auto'
         >
           Following projects showcases my skills and experience through previous projects. Each project includes a brief description, links to code repositories, and <a className='text-purple-600 font-black'>demonstration videos</a> where available. These projects reflect my ability to adapt to different technologies and manage projects efficiently.
         </motion.p>

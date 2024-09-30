@@ -14,7 +14,7 @@ function Skills() {
   const initialShowSkill = 16;
 
   return (
-    <div className="px-[9%] pt-20">
+    <div className="pt-[7rem] px-[9%]">
 
       {/* Skills - Title */}
       <motion.div variants={textMotionVariant()}>
@@ -24,9 +24,9 @@ function Skills() {
 
       {/* Display All Skiils */}
       <div className='flex flex-col'>
-        {/* First 16 skills */}
+        {/* Display skills list */}
         <div className='w-full flex flex-row justify-center'>
-          <motion.div className="flex flex-row flex-wrap justify-start gap-x-[60px] gap-y-[70px] ml-[4rem] max-w-4xl py-8"
+          <motion.div className="flex flex-row flex-wrap justify-center gap-x-[3.8rem] gap-y-[4.38rem] 2xs:max-w-[90%] md:max-w-[80%] py-8"
           >
             <AnimatePresence>
             {TECH_SKILLS.slice(0, showMore ? -1 : initialShowSkill).map((skill, index) => (

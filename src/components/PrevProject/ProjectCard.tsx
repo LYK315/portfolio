@@ -32,7 +32,7 @@ export default function ProjectCard({ index, project }: IProjectCard) {
           speed: 450,
           perspective: 1200
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[20em] w-full'
+        className='bg-tertiary p-5 rounded-2xl md:w-[23rem] 2xs:w-[19rem] h-fit'
       >
         {/* Example Image & GitHub Link */}
         <div className='relative w-full h-[200px]'>

@@ -36,7 +36,7 @@ function StarSphere(props: StarsProps) {
 
 export default function StarSphereCanvas() {
   return (
-    <div className='absolute bottom-0 w-full overflow-visible z-0 h-[22em]'>
+    <div className='absolute bottom-0 w-full overflow-visible z-0 h-[23em]'>
       <Canvas className="w-full min-h-[140%]" camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null} >
           <StarSphere />
