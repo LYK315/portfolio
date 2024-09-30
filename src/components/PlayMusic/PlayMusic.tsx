@@ -1,15 +1,18 @@
-import { useEffect, useRef, useState } from 'react'
-import { playMusic } from '../../assets';
+import { useEffect, useRef } from 'react'
 import comeAndGetYourLove from "../../assets/music/Redbone - Come and Get Your Love.mp3"
+import './PlayMusic.css'
+import { useMusicPlayer } from '../../contexts/contextMusicPlayer';
 
 // Bouncing Ball Component
 export default function PlayMusicBall() {
+  // Use Music Player Hook
+  const { isPlaying, handleMusicPlay } = useMusicPlayer();
+
   // Create mutable reference to the ball element using useRef
-  const ballRef = useRef<HTMLDivElement | null>(null);
+  const ballRef = useRef<HTMLDivElement>(null);
 
   // Create audio reference
-  const musicRef = useRef<HTMLAudioElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState<boolean>(false)
+  const musicPlayerRef = useRef<HTMLAudioElement>(null);
 
   // useEffect hook to handle side effects ball movement
   useEffect(() => {
@@ -65,33 +68,17 @@ export default function PlayMusicBall() {
     return () => cancelAnimationFrame(animationFrameId);
   }, []); // Run once on component mount
 
-  // Handle music play or pause
-  function handleMusicPlay() {
-    if (musicRef.current) {
-      if (isPlaying) {
-        musicRef.current.pause();
-      } else {
-        musicRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
 
   return (
     <div
       ref={ballRef}
-      className='absolute z-50 rounded-full cursor-pointer shadow-lg h-[3.5rem] w-[3.5rem] bg-white'
-      style={{
-        background: `url(${playMusic})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        boxShadow: '0 0 15px rgba(194, 242, 255, 0.4)',
-      }}
-      onClick={handleMusicPlay}
+      className={`music-player-button ${isPlaying ? 'playing' : 'paused'}`}
+
+      // Directly pass element in
+      onClick={() => {handleMusicPlay(musicPlayerRef.current)}}
     >
       {/* Audio Element */}
-      <audio src={comeAndGetYourLove} ref={musicRef} />
+      <audio src={comeAndGetYourLove} ref={musicPlayerRef} />
     </div>
   );
 };

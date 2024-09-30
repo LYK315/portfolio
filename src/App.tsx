@@ -1,4 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
+import { MusicPlayerProvider } from './contexts/contextMusicPlayer';
 import Navbar from "./components/Navbar"
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
@@ -12,26 +13,28 @@ function App() {
 
   return (
     <BrowserRouter>
+      <MusicPlayerProvider>
 
-      {/* Navbar */}
-      <Navbar />
+        {/* Navbar */}
+        <Navbar />
 
-      {/* Body Contents */}
-      <div className="flex flex-col bg-primary min-w-full h-fit z-10">
-        <Hero />
-        <About />
-        <Journey />
-        <Skills />
-        <Projects />
-        <Connect />
-        <ScrollToTop />
+        {/* Body Contents */}
+        <div className="flex flex-col bg-primary min-w-full h-fit z-10">
+          <Hero />
+          <About />
+          <Journey />
+          <Skills />
+          <Projects />
+          <Connect />
+          <ScrollToTop />
 
-        {/* Footer */}
-        <div className='w-full flex justify-center text-secondary text-[14px] mt-8 py-12'>
-          © 2024 Liaw Yi Kai
+          {/* Footer */}
+          <div className='w-full flex justify-center text-secondary text-[14px] mt-8 py-12'>
+            © 2024 Liaw Yi Kai
+          </div>
         </div>
-      </div>
 
+      </MusicPlayerProvider>
     </BrowserRouter>
   )
 }

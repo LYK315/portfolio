@@ -1,0 +1,21 @@
+.music-player-button {
+  position: absolute;
+  z-index: 50;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 15px rgba(194, 242, 255, 0.4);
+  transition: background-image 0.3s ease;
+}
+
+.music-player-button.paused {
+  background-image: url('../../assets/general/playMusic.png');
+}
+
+.music-player-button.playing {
+  background-image: url('../../assets/general/pauseMusic.png');
+}

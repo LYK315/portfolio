@@ -21,6 +21,16 @@ export default {
         'xl': '1280px',
         '2xl': '1536px',
       },
+      animation: {
+        scroll: 'scroll 17s linear infinite',
+        bounceSlow: 'bounce 0.8s infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },
