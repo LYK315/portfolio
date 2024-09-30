@@ -6,7 +6,6 @@ import { styles } from "../../styles";
 import StarSphereCanvas from "../../canvas/StarSphere";
 import SectionWrapper from '../../hoc/SectionWrapper'
 
-
 function Connect() {
   return (
     <div className='relative mt-[8em] xl:flex-row flex gap-10 justify-center overflow-visible'>
