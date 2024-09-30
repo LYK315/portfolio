@@ -1,0 +1,22 @@
+
+.ball {
+  font-family: "SUSE", sans-serif;
+  position: absolute;
+  height: 3.5rem;
+  width: 3.5rem;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: small;
+  cursor: pointer;
+  line-height: 1.2;
+  /* background: linear-gradient(135deg, #440571, #946eb5); */
+  background-image: url('../../assets/general/clickMe.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 20px rgba(255, 255, 224, 0.5);
+}
