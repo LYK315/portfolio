@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { useQuestion } from '../../contexts/contextQuestion';
-import './BouncingBall.css'
+import { clickMe } from '../../assets';
 
 // Bouncing Ball Component
 export default function BouncingBall() {
@@ -67,7 +67,14 @@ export default function BouncingBall() {
   return (
     <div
       ref={ballRef}
-      className='ball text-purple-100 text-center z-50'
+      className='absolute z-50 rounded-full flex cursor-pointer shadow-lg h-[3.5rem] w-[3.5rem]'
+      style={{
+        background: `url(${clickMe})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        boxShadow: '0 0 15px rgba(249, 251, 185, 0.4)',
+      }}
       onClick={() => { setOpenQuestion(true); incrementQuestionCount() }}
     >
     </div>

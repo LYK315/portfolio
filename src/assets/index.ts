@@ -3,6 +3,7 @@ import arrowUp from './general/arrow-up.png';
 import menu from './general/menu.svg';
 import close from './general/close.svg';
 import clickMe from './general/clickMe.png';
+import playMusic from './general/playMusic.png'
 
 // Tech
 import css from './tech/css.png';
@@ -58,7 +59,7 @@ import linkedin from './linkedin.png';
 
 
 export {
-  arrowUp, menu, close, clickMe,
+  arrowUp, menu, close, clickMe, playMusic,
   css, figma, git, html, javascript, reactjs, tailwind, cpp, django, firebase,
   google_cloud, google_or, java, mui, postgre, python, jira, virtualbox, uipath,
   bootstrap, androidstudio, jupyter, mysql, threejs, typescript, express, nodejs, puppeteer, playwright,
