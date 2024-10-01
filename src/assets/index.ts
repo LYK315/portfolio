@@ -2,10 +2,10 @@
 import arrowUp from './general/arrow-up.png';
 import menu from './general/menu.svg';
 import close from './general/close.svg';
-import clickMe from './general/clickMe.png';
-import playMusic from './general/playMusic.png'
-import pauseMusic from './general/pauseMusic.png'
-import musicNote from './general/musicNote.png'
+import clickMe from './general/clickMe.webp';
+import playMusic from './general/playMusic.webp'
+import pauseMusic from './general/pauseMusic.webp'
+import musicNote from './general/musicNote.webp'
 
 // Tech
 import css from './tech/css.png';

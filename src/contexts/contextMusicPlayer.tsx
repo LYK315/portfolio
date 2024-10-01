@@ -21,6 +21,10 @@ function MusicPlayerProvider({ children }: { children: ReactNode }) {
       } else {
         musicElement.play();
       }
+      // Listen for the 'ended' event to know when the music finishes
+      musicElement.addEventListener('ended', () => {
+        setIsPlaying(false); // Set playing state to false when music finishes
+      });
       setIsPlaying(!isPlaying);
     }
   };

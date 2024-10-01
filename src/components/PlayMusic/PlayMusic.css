@@ -13,9 +13,9 @@
 }
 
 .music-player-button.paused {
-  background-image: url('../../assets/general/playMusic.png');
+  background-image: url('../../assets/general/playMusic.webp');
 }
 
 .music-player-button.playing {
-  background-image: url('../../assets/general/pauseMusic.png');
+  background-image: url('../../assets/general/pauseMusic.webp');
 }
