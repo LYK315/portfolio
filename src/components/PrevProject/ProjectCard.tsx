@@ -1,7 +1,7 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { fadeIn } from "@utils/motion";
-import { github } from "@assets/index";
+import { Other } from "@assets/index";
 
 interface IProjectCard {
   index: number,
@@ -46,7 +46,7 @@ export default function ProjectCard({ index, project }: IProjectCard) {
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
-                src={github}
+                src={Other.github}
                 alt="github"
                 className='w-7 h-7 object-contain'
               />

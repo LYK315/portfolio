@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { useQuestion } from '@contexts/contextQuestion';
-import { clickMe } from '@assets/index';
+import { General } from '@assets/index';
 
 // Bouncing Ball Component
 export default function BouncingBall() {
@@ -69,7 +69,7 @@ export default function BouncingBall() {
       ref={ballRef}
       className='absolute z-50 rounded-full flex cursor-pointer shadow-lg h-[3.5rem] w-[3.5rem]'
       style={{
-        background: `url(${clickMe})`,
+        background: `url(${General.clickMe})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

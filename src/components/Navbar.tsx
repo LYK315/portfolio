@@ -2,10 +2,9 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@utils/motion';
-import KaiLogo from '@assets/kai.svg'
 import * as icon from '@assets/index';
+import { General } from '@assets/index';
 import { NAVBAR } from '@constants/index';
-import { musicNote } from '@assets/index';
 import { useAppSelector } from '@store/Hooks';
 
 export default function Navbar() {
@@ -35,14 +34,14 @@ export default function Navbar() {
           window.scrollTo(0, 0);
         }}
       >
-        <img src={KaiLogo} className='w-9 h-9 object-contain mr-2' />
+        <img src={icon.Other.kai} className='w-9 h-9 object-contain mr-2' />
 
         {/* Title | Current Playing */}
         <div className="flex flex-row text-white text-[18px] font-bold gap-2 hover:text-hover max-w-[18rem] max-h-[2rem] overflow-hidden rounded-2xl">
           {isPlaying ? (
             <div className='max-h-full max-w-full font-mono font-normal animate-scroll whitespace-nowrap'>
-              <img src={musicNote} alt="Custom Emoji" className="animate-bounce inline-block max-w-4 max-h-4" />
-              <img src={musicNote} alt="Custom Emoji" className="animate-bounceSlow inline-block max-w-4 max-h-4 mr-2" />
+              <img src={General.musicNote} alt="Custom Emoji" className="animate-bounce inline-block max-w-4 max-h-4" />
+              <img src={General.musicNote} alt="Custom Emoji" className="animate-bounceSlow inline-block max-w-4 max-h-4 mr-2" />
               Current Playing: Redbone - Come and Get Your Love
             </div>
           ) : (
@@ -73,8 +72,8 @@ export default function Navbar() {
       {/* Burger Menu Icon */}
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img
-          src={openMenu ? icon.close : icon.menu}
-          alt={icon.menu}
+          src={openMenu ? icon.General.close : icon.General.menu}
+          alt={icon.General.menu}
           className='w-[28px] h-[28px] object-contain cursor-pointer'
           onClick={() => setOpenMenu(!openMenu)}
         />

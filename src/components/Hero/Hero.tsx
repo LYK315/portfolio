@@ -7,7 +7,7 @@ import PlayMusicBall from "../PlayMusic/PlayMusic";
 import QuestionBoard from "../QuestionBoard/QuestionBoard"
 import ScrollDownBtn from "./ScrollDownBtn"
 import StaticStarsCanvas from "../../Canvas/StarStatic";
-import useAuroraBackground from "../../Hooks/useAuroraBackground";
+import useAuroraBackground from "@hooks/useAuroraBackground";
 
 export default function Hero() {
   const [opacity, setOpacity] = useState<string>('opacity-100');

@@ -59,14 +59,75 @@ import kai from './kai.svg';
 import github from './github.png';
 import linkedin from './linkedin.png';
 
+// General
+export const General = {
+  arrowUp,
+  menu,
+  close,
+  clickMe,
+  playMusic,
+  pauseMusic,
+  musicNote,
+};
 
-export {
-  arrowUp, menu, close, clickMe, playMusic, pauseMusic, musicNote,
-  css, figma, git, html, javascript, reactjs, tailwind, cpp, django, firebase,
-  google_cloud, google_or, java, mui, postgre, python, jira, virtualbox, uipath,
-  bootstrap, androidstudio, jupyter, mysql, threejs, typescript, express, nodejs, puppeteer, playwright,
-  vivahomes, dataannotation, newtz,
-  unitTest, backend, docker, frontend,
-  myedoctor, healthcare, nepts,
-  kai, github, linkedin
+// Tech
+export const Tech = {
+  css,
+  figma,
+  git,
+  html,
+  javascript,
+  reactjs,
+  tailwind,
+  cpp,
+  django,
+  firebase,
+  google_cloud,
+  google_or,
+  java,
+  mui,
+  postgre,
+  python,
+  jira,
+  virtualbox,
+  uipath,
+  bootstrap,
+  androidstudio,
+  jupyter,
+  mysql,
+  threejs,
+  typescript,
+  express,
+  nodejs,
+  puppeteer,
+  playwright,
+};
+
+// Work
+export const Work = {
+  vivahomes,
+  dataannotation,
+  newtz,
+};
+
+// About
+export const About = {
+  unitTest,
+  backend,
+  docker,
+  frontend,
+};
+
+// Projects
+export const Projects = {
+  myedoctor,
+  healthcare,
+  nepts,
+};
+
+// Other
+export const Other = {
+  kai,
+  github,
+  linkedin,
 };

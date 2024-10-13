@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { arrowUp } from "@assets/index";
+import { General } from "@assets/index";
 
 export default function ScrollToTop() {
   const [opacity, setOpacity] = useState('opacity-0')
@@ -31,7 +31,7 @@ export default function ScrollToTop() {
         onMouseEnter={(e) => trackHover(e)}
         onMouseLeave={(e) => trackHover(e)}
       >
-        <img src={arrowUp} alt="arrow-up" className='object-contain p-2' />
+        <img src={General.arrowUp} alt="arrow-up" className='object-contain p-2' />
       </div>
     </div >
   );

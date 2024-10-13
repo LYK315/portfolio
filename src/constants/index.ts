@@ -22,138 +22,138 @@ export const NAVBAR = [
 export const CORE_SKILL = [
   {
     title: "Ftontend Development",
-    icon: image.frontend,
+    icon: image.About.frontend,
   },
   {
     title: "Backend Development",
-    icon: image.backend,
+    icon: image.About.backend,
   },
   {
     title: "Unit Testings",
-    icon: image.unitTest,
+    icon: image.About.unitTest,
   },
   {
     title: "Docker & Kubernetes",
-    icon: image.docker,
+    icon: image.About.docker,
   },
 ];
 
 export const TECH_SKILLS = [
   {
     name: "React",
-    icon: image.reactjs,
+    icon: image.Tech.reactjs,
   },
   {
     name: "Django",
-    icon: image.django,
+    icon: image.Tech.django,
   },
   {
     name: "Express",
-    icon: image.express,
+    icon: image.Tech.express,
   },
   {
     name: "Python",
-    icon: image.python,
+    icon: image.Tech.python,
   },
   {
     name: "HTML 5",
-    icon: image.html,
+    icon: image.Tech.html,
   },
   {
     name: "CSS 3",
-    icon: image.css,
+    icon: image.Tech.css,
   },
   {
     name: "TypeScript",
-    icon: image.typescript,
+    icon: image.Tech.typescript,
   },
   {
     name: "JavaScript",
-    icon: image.javascript,
+    icon: image.Tech.javascript,
   },
   {
     name: "Node.js",
-    icon: image.nodejs,
+    icon: image.Tech.nodejs,
   },
   {
     name: "Java",
-    icon: image.java,
+    icon: image.Tech.java,
   },
   {
     name: "C++",
-    icon: image.cpp,
+    icon: image.Tech.cpp,
   },
   {
     name: "Tailwind CSS",
-    icon: image.tailwind,
+    icon: image.Tech.tailwind,
   },
   {
     name: "Material UI",
-    icon: image.mui,
+    icon: image.Tech.mui,
   },
   {
     name: "Bootstrap",
-    icon: image.bootstrap,
+    icon: image.Tech.bootstrap,
   },
   {
     name: "Postgre SQL",
-    icon: image.postgre,
+    icon: image.Tech.postgre,
   },
   {
     name: "MySQL",
-    icon: image.mysql,
+    icon: image.Tech.mysql,
   },
   {
     name: "Firebase",
-    icon: image.firebase,
+    icon: image.Tech.firebase,
   },
   {
     name: "Three.js",
-    icon: image.threejs,
+    icon: image.Tech.threejs,
   },
   {
     name: "git",
-    icon: image.git,
+    icon: image.Tech.git,
   },
   {
     name: "Jira",
-    icon: image.jira,
+    icon: image.Tech.jira,
   },
   {
     name: "Puppeteer",
-    icon: image.puppeteer,
+    icon: image.Tech.puppeteer,
   },
   {
     name: "Playwright",
-    icon: image.playwright,
+    icon: image.Tech.playwright,
   },
   {
     name: "Google Cloud",
-    icon: image.google_cloud,
+    icon: image.Tech.google_cloud,
   },
   {
     name: "Google OR-Tools",
-    icon: image.google_or,
+    icon: image.Tech.google_or,
   },
   {
     name: "figma",
-    icon: image.figma,
+    icon: image.Tech.figma,
   },
   {
     name: "VirtualBox",
-    icon: image.virtualbox,
+    icon: image.Tech.virtualbox,
   },
   {
     name: "UiPath",
-    icon: image.uipath,
+    icon: image.Tech.uipath,
   },
   {
     name: "Android Studio",
-    icon: image.androidstudio,
+    icon: image.Tech.androidstudio,
   },
   {
     name: "Jupyter",
-    icon: image.jupyter,
+    icon: image.Tech.jupyter,
   },
 ];
 
@@ -161,7 +161,7 @@ export const JOURNEY = [
   {
     title: "Real Estate Negotiator",
     company_name: "Vivahomes Realty",
-    icon: image.vivahomes,
+    icon: image.Work.vivahomes,
     iconBg: "#383E56",
     date: "Sep 2021 - Aug 2023",
     points: [
@@ -173,7 +173,7 @@ export const JOURNEY = [
   {
     title: "Co-Founder, Shirt Printing Business",
     company_name: "Newtz",
-    icon: image.newtz,
+    icon: image.Work.newtz,
     iconBg: "#383E56",
     date: "Nov 2022 - Present",
     points: [
@@ -184,7 +184,7 @@ export const JOURNEY = [
   {
     title: "Data Annotator",
     company_name: "Data Annotation",
-    icon: image.dataannotation,
+    icon: image.Work.dataannotation,
     iconBg: "#383E56",
     date: "Feb 2024 - Aug 2024",
     points: [
@@ -213,7 +213,7 @@ export const PROJECTS = [
         color: "pink-text-gradient",
       },
     ],
-    image: image.nepts,
+    image: image.Projects.nepts,
     source_code_link: "https://github.com/LYK315/Top_Patient_Web_App",
   },
   {
@@ -234,7 +234,7 @@ export const PROJECTS = [
         color: "pink-text-gradient",
       },
     ],
-    image: image.healthcare,
+    image: image.Projects.healthcare,
     source_code_link: "https://github.com/LYK315/Health-Care-Web-App",
   },
   {
@@ -255,7 +255,7 @@ export const PROJECTS = [
         color: "pink-text-gradient",
       },
     ],
-    image: image.myedoctor,
+    image: image.Projects.myedoctor,
     source_code_link: "https://github.com/LYK315/My-E-Doctor",
   },
 ];
@@ -263,12 +263,12 @@ export const PROJECTS = [
 export const CONNECT = [
   {
     name: "linkedin",
-    icon: image.linkedin,
+    icon: image.Other.linkedin,
     source_code_link: "http://www.linkedin.com/in/yi-kai-liaw-04aa7221a",
   },
   {
     name: "github",
-    icon: image.github,
+    icon: image.Other.github,
     source_code_link: "https://github.com/LYK315",
   }
 ]

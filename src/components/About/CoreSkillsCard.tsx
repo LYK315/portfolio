@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { Tilt } from 'react-tilt'
-import { fadeIn } from "../../Utils/motion"
+import { fadeIn } from "@utils/motion"
 
 interface IServiceCard {
   index: number,
