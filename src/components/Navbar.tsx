@@ -5,16 +5,16 @@ import { fadeIn } from '../utils/motion';
 import KaiLogo from '../assets/kai.svg'
 import * as icon from '../assets';
 import { NAVBAR } from '../constants';
-import { useMusicPlayer } from '../contexts/contextMusicPlayer';
 import { musicNote } from '../assets';
+import { useSelector } from 'react-redux';
+import { RootState } from '../state/store';
+
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState('')
   const [openMenu, setOpenMenu] = useState(false)
   const [shadow, setShadow] = useState(false)
-
-  // Use Music Player Hook
-  const { isPlaying } = useMusicPlayer();
+  const isPlaying = useSelector((state: RootState) => state.musicPlayer.isPlaying);
 
   // Track Scroll and Set Shadow appearance for navbar
   const changeshadow = () => {
@@ -39,12 +39,13 @@ export default function Navbar() {
       >
         <img src={KaiLogo} className='w-9 h-9 object-contain mr-2' />
 
+        {/* Title | Current Playing */}
         <div className="flex flex-row text-white text-[18px] font-bold gap-2 hover:text-hover max-w-[18rem] max-h-[2rem] overflow-hidden rounded-2xl">
           {isPlaying ? (
             <div className='max-h-full max-w-full font-mono font-normal animate-scroll whitespace-nowrap'>
               <img src={musicNote} alt="Custom Emoji" className="animate-bounce inline-block max-w-4 max-h-4" />
               <img src={musicNote} alt="Custom Emoji" className="animate-bounceSlow inline-block max-w-4 max-h-4 mr-2" />
-                 Current Playing: Redbone - Come and Get Your Love
+              Current Playing: Redbone - Come and Get Your Love
             </div>
           ) : (
             <>

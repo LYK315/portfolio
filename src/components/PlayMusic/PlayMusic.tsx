@@ -1,12 +1,35 @@
 import { useEffect, useRef } from 'react'
 import comeAndGetYourLove from "../../assets/music/Redbone - Come and Get Your Love.mp3"
 import './PlayMusic.css'
-import { useMusicPlayer } from '../../contexts/contextMusicPlayer';
+import { useDispatch, useSelector } from 'react-redux';
+import { AppDispatch, RootState } from '../../state/store';
+import { setIsPlaying } from '../../state/Slices/musicPlayerSlice';
 
 // Bouncing Ball Component
 export default function PlayMusicBall() {
-  // Use Music Player Hook
-  const { isPlaying, handleMusicPlay } = useMusicPlayer();
+  const dispatch = useDispatch<AppDispatch>();
+  const isPlaying = useSelector((state: RootState) => state.musicPlayer.isPlaying);
+
+  // Handler - When play button clicked
+  const handleMusicPlay = (musicElement: HTMLAudioElement | null) => {
+    if (!musicElement) return;
+
+    if (isPlaying) {
+      musicElement.pause();
+    } else {
+      musicElement.play();
+
+      const removeListener = () => {
+        dispatch(setIsPlaying(false));
+      }
+
+      // Listen for the 'ended' event to know when the music finishes
+      musicElement.removeEventListener('ended', removeListener);
+      musicElement.addEventListener('ended', removeListener);
+    }
+
+    dispatch(setIsPlaying(!isPlaying));
+  };
 
   // Create mutable reference to the ball element using useRef
   const ballRef = useRef<HTMLDivElement>(null);
@@ -75,7 +98,7 @@ export default function PlayMusicBall() {
       className={`music-player-button ${isPlaying ? 'playing' : 'paused'}`}
 
       // Directly pass element in
-      onClick={() => {handleMusicPlay(musicPlayerRef.current)}}
+      onClick={() => { handleMusicPlay(musicPlayerRef.current) }}
     >
       {/* Audio Element */}
       <audio src={comeAndGetYourLove} ref={musicPlayerRef} />
