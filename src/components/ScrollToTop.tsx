@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { arrowUp } from "../assets";
+import { arrowUp } from "@assets/index";
 
 export default function ScrollToTop() {
   const [opacity, setOpacity] = useState('opacity-0')

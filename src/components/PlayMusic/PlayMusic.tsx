@@ -1,14 +1,13 @@
 import { useEffect, useRef } from 'react'
-import comeAndGetYourLove from "../../assets/music/Redbone - Come and Get Your Love.mp3"
+import comeAndGetYourLove from "@assets/music/Redbone - Come and Get Your Love.mp3"
+import { useAppDispatch, useAppSelector } from '@store/Hooks';
+import { setIsPlaying } from '@store/Slices/MusicPlayerSlice';
 import './PlayMusic.css'
-import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../../state/store';
-import { setIsPlaying } from '../../state/Slices/musicPlayerSlice';
 
 // Bouncing Ball Component
 export default function PlayMusicBall() {
-  const dispatch = useDispatch<AppDispatch>();
-  const isPlaying = useSelector((state: RootState) => state.musicPlayer.isPlaying);
+  const dispatch = useAppDispatch();
+  const isPlaying = useAppSelector((state) => state.musicPlayer.isPlaying);
 
   // Handler - When play button clicked
   const handleMusicPlay = (musicElement: HTMLAudioElement | null) => {

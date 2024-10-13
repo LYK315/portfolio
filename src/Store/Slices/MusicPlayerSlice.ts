@@ -3,8 +3,6 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 // Interface Declaration
 interface IMusicPlayerState {
   isPlaying: boolean;
-  // setIsPlaying: (open: boolean) => void;
-  // handleMusicPlay: (ref: HTMLAudioElement | null) => void;
 };
 
 // Set Initial States
@@ -23,6 +21,6 @@ const musicPlayerSlice = createSlice({
   }
 });
 
-// Export actions and reducers (toggle action via reducer)
+// Export actions and reducers (manage state by toggling action via reducer)
 export const { setIsPlaying } = musicPlayerSlice.actions;
 export default musicPlayerSlice.reducer;

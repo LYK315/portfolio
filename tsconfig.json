@@ -18,7 +18,20 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* TS Config Path */
+    "baseUrl": "src",
+    "paths": {
+      "@assets/*": ["Assets/*"],
+      "@components/*": ["Components/*"],
+      "@constants/*": ["Constants/*"],
+      "@contexts/*": ["Contexts/*"],
+      "@hooks/*": ["Hooks/*"],
+      "@store/*": ["Store/*"],
+      "@styles/*": ["Styles/*"],
+      "@utils/*": ["Utils/*"],
+    },
   },
   "include": ["src"],
   "references": [

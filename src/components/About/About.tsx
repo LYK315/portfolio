@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
-import { textMotionVariant, fadeIn } from '../../utils/motion'
-import { styles } from '../../styles'
+import { textMotionVariant, fadeIn } from '@utils/motion'
+import { styles } from '@styles/index'
 import CoreSkillsCard from './CoreSkillsCard'
-import { CORE_SKILL } from '../../constants'
-import SectionWrapper from '../../hoc/SectionWrapper'
-import useAuroraBackground from '../../hooks/useAuroraBackground'
+import { CORE_SKILL } from '@constants/index'
+import SectionWrapper from '../../HOC/SectionWrapper'
+import useAuroraBackground from '@hooks/useAuroraBackground'
 
 function About() {
   // Use aurora background hook

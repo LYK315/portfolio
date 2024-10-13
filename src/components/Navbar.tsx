@@ -1,20 +1,18 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../utils/motion';
-import KaiLogo from '../assets/kai.svg'
-import * as icon from '../assets';
-import { NAVBAR } from '../constants';
-import { musicNote } from '../assets';
-import { useSelector } from 'react-redux';
-import { RootState } from '../state/store';
-
+import { fadeIn } from '@utils/motion';
+import KaiLogo from '@assets/kai.svg'
+import * as icon from '@assets/index';
+import { NAVBAR } from '@constants/index';
+import { musicNote } from '@assets/index';
+import { useAppSelector } from '@store/Hooks';
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState('')
   const [openMenu, setOpenMenu] = useState(false)
   const [shadow, setShadow] = useState(false)
-  const isPlaying = useSelector((state: RootState) => state.musicPlayer.isPlaying);
+  const isPlaying = useAppSelector((state) => state.musicPlayer.isPlaying);
 
   // Track Scroll and Set Shadow appearance for navbar
   const changeshadow = () => {

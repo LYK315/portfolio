@@ -1,10 +1,10 @@
 import { motion } from "framer-motion"
-import SectionWrapper from "../../hoc/SectionWrapper"
-import { textMotionVariant } from "../../utils/motion"
-import { styles } from "../../styles"
+import SectionWrapper from "../../HOC/SectionWrapper"
+import { textMotionVariant } from "@utils/motion"
+import { styles } from "@styles/index"
 import { VerticalTimeline } from 'react-vertical-timeline-component'
 import JourneyCard from "./JourneyCard"
-import { JOURNEY } from "../../constants"
+import { JOURNEY } from "@constants/index"
 
 function Journey() {
   return (

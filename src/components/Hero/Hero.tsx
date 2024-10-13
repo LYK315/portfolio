@@ -1,13 +1,13 @@
 import { useState } from "react"
 import { motion } from "framer-motion";
-import { styles } from "../../styles/index"
-import { QuestionProvider } from "../../contexts/contextQuestion";
+import { styles } from "@styles/index"
+import { QuestionProvider } from "@contexts/contextQuestion";
 import BouncingBall from "../BouncingBall/BouncingBall"
 import PlayMusicBall from "../PlayMusic/PlayMusic";
 import QuestionBoard from "../QuestionBoard/QuestionBoard"
 import ScrollDownBtn from "./ScrollDownBtn"
-import StaticStarsCanvas from "../../canvas/StarStatic";
-import useAuroraBackground from "../../hooks/useAuroraBackground";
+import StaticStarsCanvas from "../../Canvas/StarStatic";
+import useAuroraBackground from "../../Hooks/useAuroraBackground";
 
 export default function Hero() {
   const [opacity, setOpacity] = useState<string>('opacity-100');
