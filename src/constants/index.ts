@@ -104,8 +104,16 @@ export const TECH_SKILLS = [
     icon: image.Tech.mysql,
   },
   {
+    name: "MongoDB",
+    icon: image.Tech.mongodb,
+  },
+  {
     name: "Firebase",
     icon: image.Tech.firebase,
+  },
+  {
+    name: "Flutter",
+    icon: image.Tech.flutter,
   },
   {
     name: "Three.js",
@@ -160,25 +168,35 @@ export const TECH_SKILLS = [
 export const JOURNEY = [
   {
     title: "Real Estate Negotiator",
-    company_name: "Vivahomes Realty",
+    company_name: "Vivahomes Realty | MY",
     icon: image.Work.vivahomes,
     iconBg: "#383E56",
     date: "Sep 2021 - Aug 2023",
     points: [
       "Learnt the most important skills in my life, sales, negotiation and customer management.",
       "Unexpected challenges arise daily in the property business, and I've developed strong problem-solving skills as a result.",
-      "Allows me to approach challenges with unique perspectives."
+      "Allows me to approach challenges with unique perspectives.",
     ],
   },
   {
     title: "Co-Founder, Shirt Printing Business",
-    company_name: "Newtz",
+    company_name: "Newtz | MY",
     icon: image.Work.newtz,
     iconBg: "#383E56",
     date: "Nov 2022 - Present",
     points: [
       "Co-founded a shirt printing business, initially handling operations, sales, and marketing.",
-      "Transitioned to a more strategic role as the business grew, allowing a focus on IT career while the business continued to thrive under the leadership of other partners."
+    ],
+  },
+  {
+    title: "Freelance Developer",
+    company_name: "Freelance",
+    icon: image.Work.freelance,
+    iconBg: "#EEEEEE",
+    date: "Jan 2024 - Present",
+    points: [
+      "Developed a stock management system and build a bespoke web-based product catalouge for a private liquor collection.",
+      "I love learning new things, doing my freelance job allows me to learn new technologies while enjoying my free time.",
     ],
   },
   {
@@ -188,10 +206,39 @@ export const JOURNEY = [
     iconBg: "#383E56",
     date: "Feb 2024 - Aug 2024",
     points: [
-      "Analyzes and Annotate responses from Large Language Models (LLM) in various topics (e.g. programming, algorithm, coding theory)",
-      "Familiarized myself the training process of LLMs, which has improved my ability to interact with other LLMs and enhance efficiency for my daily tasks.",
+      "Analyzes and Annotate responses from Large Language Models (LLM) in various topics (e.g. programming, algorithm, coding theory).",
     ],
   },
+  {
+    title: "Full Stack Developer Intern",
+    company_name: "Play2Earn | UK",
+    icon: image.Work.play2earn,
+    iconBg: "#383E56",
+    date: "Oct 2024 - Dec 2024",
+    points: [
+      "Leveraged my expertise in React and Node.js, further enhancing my skills and gaining valuable experience in this role.",
+      "Explored blockchain technologies extensively, building a strong foundation and practical skills in this domain.",
+    ],
+  },
+  {
+    title: "LLM-GUI Internship",
+    company_name: "Midas Advisory | UK",
+    icon: image.Work.midas,
+    iconBg: "#383E56",
+    date: "Jan 2025 - Mar 2025",
+    points: [
+      "Gained valuable experience learning and using Flutter in this role, I can now say Im also a cross-platform mobile developer.",
+      "Acquired practical experience in fine-tuning and adapting LLM models to address specialized applications.",
+    ],
+  },
+  // {
+  //   title: "",
+  //   company_name: "",
+  //   icon: image.Work.,
+  //   iconBg: "#383E56",
+  //   date: "",
+  //   points: [],
+  // },
 ];
 
 export const PROJECTS = [
@@ -237,27 +284,6 @@ export const PROJECTS = [
     image: image.Projects.healthcare,
     source_code_link: "https://github.com/LYK315/Health-Care-Web-App",
   },
-  {
-    name: "My E-Doctor",
-    description:
-      "Android Application that allows patients to manage appointments, get latest health information, attend online meeting with doctor, and more. Aiming to minimize contact between people during the pandemic time.",
-    tags: [
-      {
-        name: "android-studio",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "java",
-        color: "green-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: image.Projects.myedoctor,
-    source_code_link: "https://github.com/LYK315/My-E-Doctor",
-  },
 ];
 
 export const CONNECT = [
@@ -270,8 +296,8 @@ export const CONNECT = [
     name: "github",
     icon: image.Other.github,
     source_code_link: "https://github.com/LYK315",
-  }
-]
+  },
+];
 
 export const QUESTIONS = [
   {
@@ -281,7 +307,8 @@ export const QUESTIONS = [
     wrong: "Kai is not a machine.. But he only rests when the job is done.",
   },
   {
-    question: "Stress and Challenge will only fuel my adrenaline and push me to new heights🔥🔥",
+    question:
+      "Stress and Challenge will only fuel my adrenaline and push me to new heights🔥🔥",
     ans: true,
     correct: "Mhm.. Indeed, Kai has a strong appetite for challenges.",
     wrong: "Kai is not built different, but he thrives on challenges!",
@@ -289,7 +316,9 @@ export const QUESTIONS = [
   {
     question: "I can do anything 💪",
     ans: false,
-    correct: "True, Kai is not a genius.. but he will learn anything necessary to get the job done.",
-    wrong: "Sorry, Kai can't do anything.. but he will learn anything necessary to get the job done.",
-  }
-]
+    correct:
+      "True, Kai is not a genius.. but he will learn anything necessary to get the job done.",
+    wrong:
+      "Sorry, Kai can't do anything.. but he will learn anything necessary to get the job done.",
+  },
+];

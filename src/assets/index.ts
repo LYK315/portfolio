@@ -37,11 +37,16 @@ import nodejs from './tech/nodejs.png';
 import express from './tech/expressjs.png';
 import puppeteer from './tech/puppeteer.png';
 import playwright from './tech/playwright.png';
+import flutter from './tech/flutter.png';
+import mongodb from './tech/mongodb.png';
 
 // Work
 import vivahomes from './work/vivahomes.png';
 import dataannotation from './work/dataannotation.png';
 import newtz from './work/newtz.png';
+import midas from './work/midas.jpeg';
+import freelance from './work/freelance.png';
+import play2earn from './work/play2earn.jpeg';
 
 // About
 import unitTest from './about/unitTest.png';
@@ -50,12 +55,12 @@ import docker from './about/docker.png';
 import frontend from './about/frontend.png';
 
 // Projects
-import myedoctor from './projects/myedoctor.png';
 import healthcare from './projects/healthcare.png';
 import nepts from './projects/nepts.png';
 
 // Other
 import kai from './kai.svg';
+import lyk from './lyk.jpg';
 import github from './github.png';
 import linkedin from './linkedin.png';
 
@@ -101,6 +106,8 @@ export const Tech = {
   nodejs,
   puppeteer,
   playwright,
+  flutter,
+  mongodb
 };
 
 // Work
@@ -108,6 +115,9 @@ export const Work = {
   vivahomes,
   dataannotation,
   newtz,
+  freelance,
+  midas,
+  play2earn,
 };
 
 // About
@@ -120,7 +130,6 @@ export const About = {
 
 // Projects
 export const Projects = {
-  myedoctor,
   healthcare,
   nepts,
 };
@@ -130,4 +139,5 @@ export const Other = {
   kai,
   github,
   linkedin,
+  lyk,
 };

@@ -28,7 +28,7 @@ function App() {
 
           {/* Footer */}
           <div className='w-full flex justify-center text-secondary text-[14px] mt-8 py-12'>
-            © 2024 Liaw Yi Kai
+            © 2025 Liaw Yi Kai
           </div>
         </div>
 

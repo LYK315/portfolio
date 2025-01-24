@@ -11,7 +11,7 @@ import SectionWrapper from "../../HOC/SectionWrapper"
 
 function Skills() {
   const [showMore, setShowMore] = useState<boolean>(false)
-  const initialShowSkill = 16;
+  const initialShowSkill = 17;
 
   return (
     <div className="pt-[7rem] px-[9%]">

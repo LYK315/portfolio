@@ -11,7 +11,7 @@ export default function QuestionBoard() {
   const { openQuestion, questionCount, closeQuestion } = useQuestion();
 
   // Assign Different Questions
-  let question = QUESTIONS[questionCount];
+  const question = QUESTIONS[questionCount];
 
   // Answer Card Variables Set up
   const [answered, setAnswered] = useState<boolean>(false);
@@ -27,11 +27,15 @@ export default function QuestionBoard() {
   function handleYesNo(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     if (!e.target) return;
     const targetElement = e.target as HTMLElement;
-    let selected = targetElement.firstChild?.textContent;
+    const selected = targetElement.firstChild?.textContent;
     let selection = null
 
     // Assign Yes or No selected
-    selected === 'Yes' ? selection = true : selection = false;
+    if (selected === 'Yes') {
+      selection = true;
+    } else {
+      selection = false;
+    }
 
     // Check if selected answer is correct
     if (selection == question.ans) {
