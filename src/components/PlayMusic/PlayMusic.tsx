@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import comeAndGetYourLove from "@assets/music/Redbone - Come and Get Your Love.mp3"
-import { useAppDispatch, useAppSelector } from '@store/Hooks';
+import { useAppDispatch, useAppSelector } from '@store/hook';
 import { setIsPlaying } from '@store/Slices/MusicPlayerSlice';
 import './PlayMusic.css'
 
