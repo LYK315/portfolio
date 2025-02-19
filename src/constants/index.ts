@@ -1,4 +1,4 @@
-import * as image from "assets/index";
+import * as image from "@assets/index";
 
 export const NAVBAR = [
   {

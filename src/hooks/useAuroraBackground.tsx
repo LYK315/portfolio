@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useMotionValue, useMotionTemplate, animate, MotionValue } from 'framer-motion';
-import { colors } from 'styles/index';
+import { colors } from '@styles/index';
 
 type Color = string;
 type AuroraColors = Color[];

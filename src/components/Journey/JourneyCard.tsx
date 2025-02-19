@@ -1,6 +1,6 @@
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { colors } from 'styles/index';
+import { colors } from '@styles/index';
 
 interface IJourneyCard {
   journey: {
