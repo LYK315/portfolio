@@ -1,12 +1,12 @@
 import { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
-import { styles } from "@styles/index"
+import { styles } from "styles/index"
 import { textMotionVariant } from "utils/motion"
 import SkillCard from "./SkillCard"
 import { fadeIn } from "utils/motion"
-import { TECH_SKILLS } from "@constants/index"
+import { TECH_SKILLS } from "constants/index"
 import { RiArrowDownDoubleFill, RiArrowUpDoubleFill } from "react-icons/ri"
-import SectionWrapper from "../../HOC/SectionWrapper"
+import SectionWrapper from "../../hoc/SectionWrapper"
 
 
 function Skills() {

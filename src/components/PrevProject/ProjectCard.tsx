@@ -1,7 +1,7 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { fadeIn } from "utils/motion";
-import { Other } from "@assets/index";
+import { Other } from "assets/index";
 
 interface IProjectCard {
   index: number,
