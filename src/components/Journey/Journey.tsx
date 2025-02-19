@@ -72,4 +72,6 @@ function Journey() {
   );
 }
 
-export default SectionWrapper(Journey, "journey");
+const WrappedSkills = SectionWrapper(Journey, 'journey');
+
+export default WrappedSkills;

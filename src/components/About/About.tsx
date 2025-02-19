@@ -45,4 +45,6 @@ function About() {
   )
 }
 
-export default SectionWrapper(About, 'about');
+const WrappedSkills = SectionWrapper(About, 'about');
+
+export default WrappedSkills;

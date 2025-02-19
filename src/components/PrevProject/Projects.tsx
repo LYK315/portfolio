@@ -43,4 +43,6 @@ function Projects() {
   )
 }
 
-export default SectionWrapper(Projects, 'projects')
+const WrappedSkills = SectionWrapper(Projects, 'projects');
+
+export default WrappedSkills;

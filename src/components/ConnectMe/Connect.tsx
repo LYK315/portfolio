@@ -41,4 +41,8 @@ function Connect() {
   );
 }
 
-export default SectionWrapper(Connect, 'connect')
+const WrappedSkills = SectionWrapper(Connect, 'connect');
+
+export default WrappedSkills;
+
+
