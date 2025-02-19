@@ -21,7 +21,7 @@
     "noFallthroughCasesInSwitch": true,
 
     /* TS Config Path */
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "paths": {
       "@assets/*": ["Assets/*"],
       "@components/*": ["Components/*"],
