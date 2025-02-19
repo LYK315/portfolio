@@ -1,12 +1,12 @@
 import { BrowserRouter } from 'react-router-dom';
-import Navbar from "@components/Navbar"
-import Hero from '@components/Hero/Hero';
-import About from '@components/About/About';
-import Journey from '@components/Journey/Journey';
-import Skills from '@components/Skills/Skills';
-import Projects from '@components/PrevProject/Projects';
-import Connect from '@components/ConnectMe/Connect';
-import ScrollToTop from '@components/ScrollToTop';
+import Navbar from "components/Navbar"
+import Hero from 'components/Hero/Hero';
+import About from 'components/About/About';
+import Journey from 'components/Journey/Journey';
+import Skills from 'components/Skills/Skills';
+import Projects from 'components/PrevProject/Projects';
+import Connect from 'components/ConnectMe/Connect';
+import ScrollToTop from 'components/ScrollToTop';
 
 function App() {
 

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion, animate, useMotionValue, useMotionTemplate } from 'framer-motion'
-import { useQuestion } from "@contexts/contextQuestion";
-import { slideIn } from "@utils/motion";
-import { QUESTIONS } from "@constants/index";
+import { useQuestion } from "contexts/contextQuestion";
+import { slideIn } from "utils/motion";
+import { QUESTIONS } from "constants/index";
 import AnswerCard from "./AnswerCard";
 import { IoClose } from "react-icons/io5";
 

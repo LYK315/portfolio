@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
-import { useQuestion } from '@contexts/contextQuestion';
-import { General } from '@assets/index';
+import { useQuestion } from 'contexts/contextQuestion';
+import { General } from 'assets/index';
 
 // Bouncing Ball Component
 export default function BouncingBall() {
