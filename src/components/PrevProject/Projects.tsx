@@ -1,8 +1,8 @@
 import ProjectCard from "./ProjectCard"
 import { motion } from "framer-motion"
 import { styles } from "@styles/index"
-import { textMotionVariant } from "@utils/motion"
-import { fadeIn } from "@utils/motion"
+import { textMotionVariant } from "utils/motion"
+import { fadeIn } from "utils/motion"
 import { PROJECTS } from "@constants/index"
 import SectionWrapper from '../../HOC/SectionWrapper'
 

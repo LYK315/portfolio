@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { JOURNEY } from "@constants/index";
-import { fadeIn, textMotionVariant } from "@utils/motion";
+import { fadeIn, textMotionVariant } from "utils/motion";
 import { styles } from "@styles/index";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import { RiArrowDownDoubleFill, RiArrowUpDoubleFill } from "react-icons/ri";

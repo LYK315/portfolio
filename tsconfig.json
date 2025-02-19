@@ -30,7 +30,7 @@
       "@hooks/*": ["Hooks/*"],
       "@store/*": ["Store/*"],
       "@styles/*": ["Styles/*"],
-      "@utils/*": ["Utils/*"],
+      "@utils/*": ["utils/*"],
     },
   },
   "include": ["src"],

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { slideIn } from "@utils/motion";
+import { slideIn } from "utils/motion";
 import { CONNECT } from "@constants/index";
 import { styles } from "@styles/index";
 import ConnectCard from "./ConnectCard";

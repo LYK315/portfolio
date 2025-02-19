@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "@utils/motion";
+import { fadeIn } from "utils/motion";
 import * as icon from "@assets/index";
 import { General } from "@assets/index";
 import { NAVBAR } from "@constants/index";

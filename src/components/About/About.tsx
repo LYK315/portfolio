@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { textMotionVariant, fadeIn } from '@utils/motion'
+import { textMotionVariant, fadeIn } from 'utils/motion'
 import { styles } from '@styles/index'
 import { CORE_SKILL } from '@constants/index'
 import CoreSkillsCard from './CoreSkillsCard'
