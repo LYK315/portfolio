@@ -183,7 +183,7 @@ export const JOURNEY = [
     company_name: "Newtz | MY",
     icon: image.Work.newtz,
     iconBg: "#383E56",
-    date: "Nov 2022 - Present",
+    date: "Nov 2022 - Dec 2023",
     points: [
       "Co-founded a shirt printing business, initially handling operations, sales, and marketing.",
     ],
@@ -222,7 +222,7 @@ export const JOURNEY = [
   },
   {
     title: "LLM-GUI Internship",
-    company_name: "Midas Advisory | UK",
+    company_name: "Quantimental Technologies | UK",
     icon: image.Work.midas,
     iconBg: "#383E56",
     date: "Jan 2025 - Mar 2025",
