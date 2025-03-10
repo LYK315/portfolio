@@ -223,8 +223,8 @@ export const JOURNEY = [
   {
     title: "LLM-GUI Internship",
     company_name: "Quantimental Technologies | UK",
-    icon: image.Work.midas,
-    iconBg: "#383E56",
+    icon: image.Work.qmt,
+    iconBg: "#FFF",
     date: "Jan 2025 - Mar 2025",
     points: [
       "Gained valuable experience learning and using Flutter in this role, I can now say Im also a cross-platform mobile developer.",
@@ -243,24 +243,59 @@ export const JOURNEY = [
 
 export const PROJECTS = [
   {
+    name: "Marginal.AI - Financial LLM Chatbot",
+    description:
+      "An LLM chatbot web app focused on banking and finance, offering stock analysis, insights on U.S.-listed companies, and subscription-based event alerts.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MaterialUI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.JS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: 'MongoDB',
+        color: "orange-text-gradient"
+      },
+    ],
+    // image: ,
+    video: image.ProjectVideos.marginalVideo,
+    // source_code_link: "https://github.com/LYK315/Top_Patient_Web_App",
+  },
+  {
     name: "Non-Emergency Patient Transport Service",
     description:
       "A platform that offers a seamless Non-Emergency Patient Transport Service (NEPTS), enabling patients to manage their bookings through a few simple steps. It also provides staff with access to optimized routing schedules.",
     tags: [
       {
-        name: "django",
+        name: "Django",
         color: "blue-text-gradient",
       },
       {
-        name: "react",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "google or-tools",
+        name: "MaterialUI",
         color: "pink-text-gradient",
       },
+      {
+        name: 'PostgreSQL',
+        color: "orange-text-gradient"
+      },
+      {
+        name: "Google OR-Tools",
+        color: "text-red-400",
+      },
     ],
-    image: image.Projects.nepts,
+    image: image.ProjectImages.nepts,
+    video: image.ProjectVideos.neptsVideo,
     source_code_link: "https://github.com/LYK315/Top_Patient_Web_App",
   },
   {
@@ -269,19 +304,23 @@ export const PROJECTS = [
       "Web application that enables users to book appointment online, view schedules, find doctor specialists, get latest health care information, and more. Bringing the medical center online.",
     tags: [
       {
-        name: "django",
+        name: "Django",
         color: "blue-text-gradient",
       },
       {
-        name: "bootstrap",
+        name: "HTML, CSS, JS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "firebase",
-        color: "pink-text-gradient",
+        name: "Firebase",
+        color: "orange-text-gradient",
       },
     ],
-    image: image.Projects.healthcare,
+    image: image.ProjectImages.healthcare,
     source_code_link: "https://github.com/LYK315/Health-Care-Web-App",
   },
 ];
